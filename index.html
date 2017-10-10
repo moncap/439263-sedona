@@ -3,26 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фото и видео</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Форма отзыва</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фото и видео</a>
+            </li>
+            <li class="site-list__logo">
+              <img class="site-list__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
         <a class="page-header__logo">
           <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
         </a>
@@ -34,66 +42,70 @@
     <main class="page-main">
       <h1 class="page-main__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
       <section class="causes">
-        <div class="causes__wrapper">
-          <h2 class="causes__title">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</h2>
-<<<<<<< HEAD
-          <section class="causes__advantage causes__advantage--bc">
-=======
-          <section class="causes__advantage causes__advantage--background">
->>>>>>> c1d0e8fc68646e53101623d62d80c4f260ee2043
-            <h3 class="causes__subtitle">НАСТОЯЩИЙ ГОРОДОК</h3>
-            <b class="causes__number">№1</b>
-            <p class="causes__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+        <h2 class="causes__title">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</h2>
+        <section class="causes__advantage causes__advantage--background">
+          <div class="causes__wrapper">
+            <div class="causes__description">
+              <h3 class="causes__subtitle">Настоящий городок</h3>
+              <b class="causes__number">№1</b>
+              <p class="causes__text">Седона небольшой городок в Аризоне, заслуживающий большего!</p>
+            </div>
             <img class="causes__image" src="img/main-city-mobile@1x.jpg" width="520" height="260" alt="Город">
-            <ul class="causes__list">
-              <li class="causes__item causes__item--hotel">
-                <b class="causes__title-list">Жилье</b>
-                <p class="causes__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-              </li>
-              <li class="causes__item causes__item--gifts">
-                <b class="causes__title-list">Сувениры</b>
-                <p class="causes__description">Не только китайского, но и местного производства!</p>
-              </li>
-              <li class="causes__item causes__item--food">
-                <b class="causes__title-list">Еда</b>
-                <p class="causes__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-              </li>
-            </ul>
-          </section>
-          <section class="causes__advantage causes__advantage--bc">
-            <h3 class="causes__subtitle">ТАМ ЕСТЬ Мост дьявола</h3>
-            <b class="causes__number">№2</b>
-            <p class="causes__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <img class="causes__image" src="img/photo-bridge-mobile@1x.jpg" width="520" height="260" alt="Мост Дьявола">
-          </section>
+          </div>
+          <ul class="causes__list">
+            <li class="causes__item causes__item--hotel">
+              <b class="causes__title-list">Жилье</b>
+              <p class="causes__description-list">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="causes__item causes__item--gifts">
+              <b class="causes__title-list">Сувениры</b>
+              <p class="causes__description-list">Не только китайского, но и местного производства!</p>
+            </li>
+            <li class="causes__item causes__item--food">
+              <b class="causes__title-list">Еда</b>
+              <p class="causes__description-list">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+            </li>
+          </ul>
+        </section>
+        <section class="causes__advantage causes__advantage--background">
+          <div class="causes__wrapper">
+            <div class="causes__description causes__description--right">
+              <h3 class="causes__subtitle">Там есть Мост Дьявола</h3>
+              <b class="causes__number">№2</b>
+              <p class="causes__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <img class="causes__image causes__image--left" src="img/photo-bridge-mobile@1x.jpg" width="520" height="260" alt="Мост Дьявола">
+          </div>
+        </section>
+        <div class="causes__wrapper">
           <section class="causes__advantage">
-            <h3 class="causes__subtitle">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+            <h3 class="causes__subtitle">Небольшая площадь</h3>
             <b class="causes__number">№3</b>
-            <p class="causes__text">ВСЕ интересные места находятся очень близко</p>
+            <p class="causes__text">Все интересные места находятся очень близко</p>
           </section>
           <section class="causes__advantage">
-            <h3 class="causes__subtitle">КРАСИВАЯ ДОРОГА</h3>
+            <h3 class="causes__subtitle">Красивая дорога</h3>
             <b class="causes__number">№4</b>
-            <p class="causes__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+            <p class="causes__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </section>
           <section class="causes__advantage">
-            <h3 class="causes__subtitle">МАЛО ТУРИСТОВ</h3>
+            <h3 class="causes__subtitle">Мало туристов</h3>
             <b class="causes__number">№5</b>
             <p class="causes__text">Большинство едет в гранд каньон и толпится там</p>
           </section>
-        </div>
-      </section>
-      <section class="find-hotel">
-        <h2 class="find-hotel__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-        <p class="find-hotel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="find-hotel__button button" type="button">Найти гостиницу</button>
-      </section>
-      <div class="map"></div>
+        </section>
+        <section class="find-hotel">
+          <h2 class="find-hotel__title">Заинтересовались?</h2>
+          <p class="find-hotel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <button class="find-hotel__button button" type="button">Найти гостиницу</button>
+          <div class="find-hotel__map"></div>
+        </section>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <a class="page-footer__visit" href="index.html">#Visitsedona</a>
         <div class="page-footer__contacts">
-          <a class="page-footer__visit" href="index.html">#VISITSEDONA</a>
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
@@ -110,9 +122,28 @@
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
-          <a class="copyright__button button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__button" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy<</span></a>
         </div>
       </div>
     </footer>
+
+  <script>
+    var navMain = document.querySelector('.main-nav__list');
+    var navToggle = document.querySelector('.main-nav__toggle');
+    var navClose = document.querySelector('.main-nav__close');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navClose.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      navMain.classList.add("main-nav--closed");
+    });
+
+    navToggle.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      navMain.classList.add("main-nav--opened");
+    });
+  </script>
+
   </body>
 </html>

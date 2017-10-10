@@ -1,5 +1,8 @@
 .form {
-  padding: 0 20px;
+  width: 320px;
+
+  text-align: left;
+
   background-color: #ffffff;
 }
 
@@ -11,6 +14,8 @@
 }
 
 .form__text {
+  display: block;
+  width: 279px;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
@@ -20,4 +25,153 @@
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+.form-error {
+  margin: 0 auto;
+  width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    margin: 0 auto;
+    width: 768px;
+  }
+
+  .form__filter {
+    width: 768px;
+  }
+
+  .form__header {
+    text-align: center;
+  }
+
+  .form__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__login {
+    text-align: right;
+    order: 2;
+  }
+
+  .form__contacts {
+    order: 3;
+  }
+
+  .form__contacts .form__field {
+    display: block;
+    width: 648px;
+  }
+
+  .form__filters {
+    order: 1;
+  }
+
+  .form__attraction {
+    text-align: center;
+  }
+
+  .form__wrapper-attraction {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 460px;
+  }
+
+  .form__wrapper-attraction .checkbox {
+    display: block;
+    width: 230px;
+  }
+
+  .form__attraction p:nth-child(1) {
+    order: 1;
+  }
+
+  .form__attraction p:nth-child(2) {
+    order: 3;
+  }
+
+  .form__attraction p:nth-child(3) {
+    order: 2;
+  }
+
+  .form__attraction p:nth-child(4) {
+    order: 4;
+  }
+
+  .form__emotions {
+    text-align: center;
+  }
+
+  .form__text {
+    display: block;
+    width: 648px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    margin: 0 auto;
+    width: 1200px;
+  }
+
+  .form__filter {
+    width: 960px;
+    margin: 0 120px;
+  }
+
+  .form__text {
+    margin: 0 auto;
+  }
+
+  .form__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__login {
+    text-align: left;
+    order: 2;
+  }
+
+  .form__contacts {
+    order: 3;
+    width: 960px;
+  }
+
+  .form__contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__contacts .form__field {
+    width: 315px;
+  }
+
+  .form__wrapper-attraction {
+    width: 100%;
+  }
+
+  .form__filters {
+    order: 1;
+  }
+
+  .form__attraction p:nth-child(1) {
+    order: 1;
+  }
+
+  .form__attraction p:nth-child(2) {
+    order: 3;
+  }
+
+  .form__attraction p:nth-child(3) {
+    order: 2;
+  }
+
+  .form__attraction p:nth-child(4) {
+    order: 4;
+  }
 }
