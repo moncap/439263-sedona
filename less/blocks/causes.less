@@ -3,22 +3,56 @@
 }
 
 .causes__title {
+  margin-bottom: 26px;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
 }
 
-.causes__advantage {
-  background-color: #eeeeee;
+.causes__advantage--short {
+  padding: 27px 20px;
+  text-transform: uppercase;
   border-bottom: 1px solid #d6d6d6;
 }
 
-.causes__advantage--background {
+.causes__wrapper--short {
+  background-color: #eeeeee;
+}
+
+.causes__description {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.causes__description-list {
+  display: block;
+  margin: 0;
+  margin-top: 15px;
+  width: 235px;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.causes__description--background {
+  padding: 0 15px;
+  padding-top: 58px;
+  padding-bottom: 41px;
   background-color: #81b3d2;
+
+  color: #ffffff;
+
+  border: none;
+}
+
+.causes__description--right {
+  padding-top: 40px;
 }
 
 .causes__subtitle {
   margin: 0;
+  margin-bottom: 6px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -32,24 +66,33 @@
 }
 
 .causes__text {
+  margin: 0;
+  margin-top: 15px;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
 }
 
+.causes__image {
+  height: 260px;
+}
+
 .causes__list {
   margin: 0;
+  padding: 0;
+  padding-bottom: 35px;
   text-align: left;
   background-color: #ffffff;
   list-style: none;
 }
 
 .causes__item {
-  padding-left: 52px;
+  padding-top: 26px;
+  padding-left: 73px;
 
   background-color: #ffffff;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: 24px 17px;
   background-size: 40px 35px;
 }
 
@@ -72,36 +115,100 @@
   text-transform: uppercase;
 }
 
-.causes__description {
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-}
-
-.causes__description-list {
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
+@media (max-width: @mobile-width-only) {
+  .causes__description--arrow {
+    clip-path: polygon(0 0, 50% 16px, 100% 0, 100% 100%, 0 100%);
+  }
 }
 
 @media (min-width: @tablet-width) {
+  .causes__title {
+    margin: 0;
+    margin-bottom: 49px;
+  }
+
+  .causes__text {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 180px;
+  }
+
+  .causes__description--background {
+    padding: 0 38px;
+    padding-top: 42px;
+    padding-bottom: 38px;
+    width: 256px;
+  }
+
+  .causes__subtitle {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 155px;
+  }
+
+  .causes__number {
+    margin-bottom: 24px;
+  }
+
+  .causes__image {
+    width: 100%;
+    height: 256px;
+  }
+
   .causes__list {
     display: flex;
     justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 33px;
+    margin-bottom: 50px;
 
     text-align: center;
   }
 
   .causes__item {
-    width: 156px;
+    width: 256px;
     padding-left: 0;
-    padding-top: 160px;
-    background-position: 60px 90px;
+    padding-top: 98px;
+    background-position: 90px;
     background-size: 77px 68px;
+  }
+
+  .causes__item--hotel {
+    order: 1;
+  }
+
+  .causes__item--gifts {
+    order: 3;
+  }
+
+  .causes__item--food {
+    order: 2;
+  }
+
+  .causes__description-list {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 285px;
   }
 
   .causes__wrapper {
     display: flex;
+    justify-content: space-around;
+    padding: 0;
+    width: 768px;
+  }
+
+  .causes__wrapper--short {
+    padding-top: 45px;
+    padding-bottom: 42px;
+  }
+
+  .causes__advantage--short {
+    padding: 0;
+
+    border: none;
   }
 
   .causes__description--right {
@@ -114,12 +221,42 @@
 }
 
 @media (min-width: @desktop-width) {
-  .causes__list {
-    display: flex;
+  .causes__wrapper {
+    width: 1200px;
   }
 
-  .causes__wrapper {
-    display: flex;
+  .causes__title {
+    margin-bottom: 49px;
+  }
+
+  .causes__description {
+    width: 400px;
+  }
+
+  .causes__image {
+    width: 100%;
+    height: 256px;
+  }
+
+  .causes__list {
+    justify-content: space-around;
+    margin-bottom: 26px;
+    padding-bottom: 56px;
+  }
+
+  .causes__text {
+    width: 310px;
+  }
+
+  .causes__description--background {
+    width: 400px;
+    padding: 0 45px;
+    padding-top: 53px;
+    padding-bottom: 20px;
+  }
+
+  .causes__wrapper--short {
+    padding-bottom: 65px;
   }
 
   .causes__description--right {

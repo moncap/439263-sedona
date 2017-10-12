@@ -9,16 +9,17 @@
   position: absolute;
 
   left: 115px;
+  z-index: 2;
 }
 
 .page-header__background {
-  margin-top: 56px;
   height: 389px;
 
   background-color: #9ec9df;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  clip-path: polygon(0 93%, 0 0, 100% 0, 100% 93%, 50% 100%);
 }
 
 .page-header__text-index {
@@ -28,7 +29,33 @@
   height: 214px;
 }
 
+@media (max-width: @mobile-width-only) {
+  .page-header__background {
+    margin-top: 56px;
+  }
+
+  .page-header__background--submenu {
+    position: relative;
+    height: 158px;
+
+    background-position: bottom;
+
+    clip-path: polygon(0 132px, 0 0, 100% 0, 100% 132px, 50% 100%);
+  }
+
+  .page-header__text-index--submenu {
+    position: absolute;
+
+    top: -120px;
+    left: 20px;
+  }
+}
+
 @media (min-width: @tablet-width) {
+  .page-header {
+    margin-bottom: 40px;
+  }
+
   .page-header__background {
     width: 100%;
     height: 518px;
@@ -36,15 +63,30 @@
     background-size: cover;
   }
 
+  .page-header__background--submenu {
+    position: relative;
+    height: 290px;
+
+    background-position: bottom;
+
+    clip-path: polygon(0% 0%, 100% 0%, 100% 254px, 734px 257px, 734px 233px, 50% 100%, 34px 233px, 34px 257px, 0% 254px);
+  }
+
+  .page-header__text-index--submenu {
+    position: absolute;
+
+    top: -120px;
+    left: 150px;
+  }
+
   .page-header__logo {
     display: none;
   }
 
   .page-header__text-index {
-    display: block;
+    margin-top: 77px;
     width: 460px;
     height: 350px;
-    margin: 0 auto;
   }
 }
 
@@ -52,7 +94,7 @@
   .page-header__background {
     width: 100%;
     height: 518px;
-
+    clip-path: polygon(0% 0%, 100% 0%, 100% 463px, 950px 485px, 950px 461px, 50% 100%, 250px 461px, 250px 485px, 0% 463px);
     background-size: cover;
   }
 
@@ -61,9 +103,24 @@
   }
 
   .page-header__text-index {
-    display: block;
+    margin-top: 79px;
     width: 460px;
     height: 350px;
-    margin: 0 auto;
+  }
+
+  .page-header__background--submenu {
+    position: relative;
+    height: 302px;
+
+    background-position: bottom;
+
+    clip-path: polygon(0% 0%, 100% 0%, 100% 245px, 950px 268px, 950px 244px, 50% 100%, 250px 244px, 250px 268px, 0% 245px);
+  }
+
+  .page-header__text-index--submenu {
+    position: absolute;
+
+    top: -120px;
+    left: 370px;
   }
 }

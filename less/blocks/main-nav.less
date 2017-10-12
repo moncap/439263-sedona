@@ -9,7 +9,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 282px;
+  top: 240px;
   right: 20px;
   z-index: 2;
 
@@ -45,7 +45,6 @@
 }
 
 .main-nav__list {
-  display: none;
   margin: 0;
   padding: 0;
 
@@ -54,16 +53,16 @@
 }
 
 @media (max-width: @mobile-width-only) {
-  .main-nav--closed .site-list__item {
+  .main-nav--closed {
     display: none;
   }
 
-  .main-nav--nojs .main-nav__toggle {
-    display: none;
-  }
-
-  .main-nav--opened .main-nav__toggle {
+  .main-nav--opened {
     display: block;
+  }
+
+  .main-nav--top {
+    top: 20px;
   }
 }
 

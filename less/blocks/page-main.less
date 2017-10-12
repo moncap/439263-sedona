@@ -5,7 +5,9 @@
 }
 
 .page-main__title {
-  margin-top: 45px;
+  margin: 0;
+  margin-top: 38px;
+  margin-bottom: 28px;
 
   font-size: 18px;
   line-height: 26px;
@@ -18,11 +20,22 @@
     width: 768px;
     margin: 0 auto;
   }
+
+  .page-main__title {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 442px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .page-main {
     width: 1200px;
     margin: 0 auto;
+  }
+
+  .page-main__title {
+    margin-bottom: 30px;
   }
 }

@@ -1,13 +1,32 @@
 .copyright__text {
+  padding-right: 20px;
   font-size: 14px;
   line-height: 26px;
   color: #000000;
 }
 
 .copyright__button {
-  width: 27px;
-  height: 34px;
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  position: relative;
+}
+
+.copyright__htmlacademy {
+  position: absolute;
+  top: -10px;
+  left: -15px;
+
+  &:hover,
+  &:focus {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    fill: #b2b2b2;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__htmlacademy {
+    top: -28px;
+    left: 44px;
+  }
 }
