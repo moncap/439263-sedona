@@ -266,6 +266,7 @@
 @media (min-width: @tablet-width) {
   .form {
     margin: 0 auto;
+    margin-bottom: 60px;
     width: 768px;
   }
 
@@ -275,10 +276,12 @@
   }
 
   .form__filter {
+    padding-top: 23px;
     width: 768px;
   }
 
   .form__header {
+    padding-top: 25px;
     margin-bottom: 35px;
 
     text-align: center;
@@ -288,12 +291,22 @@
 
   .form__filters .form__title {
     margin-bottom: 78px;
+    margin-left: 63px;
   }
 
   .form__filters-wrapper {
     margin-left: 40px;
+    padding-left: 100px;
 
     border: none;
+  }
+
+  .radio input[type="radio"] + .radio-indicator {
+    left: -70px;
+  }
+
+  .form__filters-wrapper p {
+    margin-bottom: 55px;
   }
 
   .form__wrapper {
@@ -303,23 +316,55 @@
   }
 
   .form__login {
-    margin-left: auto;
-    text-align: right;
+    margin-right: 30px;
+    text-align: left;
     order: 2;
     border: none;
   }
 
   .form__login .form__title {
-    margin-bottom: 60px;
+    margin-bottom: 63px;
+
+    text-align: left;
+  }
+
+  .form__login .form__field {
+    margin-left: 7px;
+    width: 178px;
+  }
+
+  .form__field--tel,
+  .form-field--email {
+    background-position: 610px center;
   }
 
   .form__contacts {
-    padding-top: 45px;
+    padding-top: 25px;
+    padding-bottom: 8px;
+
     order: 3;
+    border: none;
+  }
+
+  .form__contacts h2 {
+    margin-left: 50px;
+    margin-bottom: 27px;
+  }
+
+  .form__contacts p {
+    margin-bottom: 25px;
+  }
+
+  .form__contacts .form__label {
+    margin-left: 27px;
   }
 
   .form__contacts .form__field {
     display: block;
+    margin-top: 7px;
+    margin-left: 5px;
+    padding-top: 21px;
+    padding-bottom: 21px;
     width: 648px;
   }
 
@@ -347,7 +392,9 @@
   .form__wrapper-attraction {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    padding: 0;
+    margin: 0;
+    margin-left: 180px;
     width: 460px;
   }
 
@@ -383,7 +430,7 @@
   .form__textarea {
     margin-top: 60px;
     padding-bottom: 0;
-    width: 648px;
+    width: 620px;
     height: 140px;
   }
 
@@ -394,10 +441,14 @@
 
   .form__button {
     margin: 0;
+    width: 324px;
   }
 
   .form__compulsory {
     display: block;
+
+    margin-top: 20px;
+    margin-left: 50px;
   }
 }
 
@@ -407,9 +458,19 @@
     width: 1200px;
   }
 
+  .form__header {
+    margin-bottom: 45px;
+    padding-top: 57px;
+  }
+
   .form__filter {
     width: 960px;
-    margin: 0 120px;
+    margin: 0 auto;
+  }
+
+  .form__filters-wrapper {
+    margin: 0;
+    padding-left: 80px;
   }
 
   .form__text {
@@ -422,13 +483,22 @@
   }
 
   .form__login {
-    text-align: left;
+    margin: 0;
     order: 2;
+  }
+
+  .form__login .form__field {
+    width: 290px;
   }
 
   .form__contacts {
     order: 3;
     width: 960px;
+  }
+
+  .form__contacts .form__label {
+    margin: 0;
+    padding: 0;
   }
 
   .form__contacts-wrapper {
@@ -441,11 +511,20 @@
   }
 
   .form__wrapper-attraction {
-    width: 100%;
+    justify-content: space-around;
+
+    margin: 0;
+    width: 960px;
   }
 
   .form__filters {
     order: 1;
+  }
+
+  .form__attraction {
+    flex-wrap: nowrap;
+
+    margin-bottom: 10px;
   }
 
   .form__attraction p:nth-child(1) {
@@ -466,5 +545,15 @@
 
   .form__textarea {
     width: 960px;
+  }
+
+  .form__emotions-wrapper {
+    justify-content: space-between;
+
+    margin-bottom: 60px;
+  }
+
+  .form__button {
+    width: 480px;
   }
 }
