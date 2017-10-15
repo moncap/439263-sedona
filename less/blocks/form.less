@@ -57,6 +57,10 @@
   border-bottom: 1px solid #e5e5e5;
 }
 
+.form__contacts .form__title {
+  margin-left: 12px;
+}
+
 .form__field--tel {
   background-image: url("../img/icon-phone.svg");
   background-position: 260px center;
@@ -187,6 +191,10 @@
   cursor: pointer;
 }
 
+.form__wrapper-attraction label {
+  margin-left: 10px;
+}
+
 .checkbox input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
   top: -13px;
@@ -242,7 +250,7 @@
   margin-top: 19px;
   margin-bottom: 51px;
   padding: 20px 20px;
-  width: 280px;
+  width: 240px;
   height: 160px;
 
   font-size: 18px;
@@ -273,6 +281,11 @@
   .form__main-title {
     font-size: 30px;
     line-height: 30px;
+  }
+
+  .form__text {
+    margin: 0 auto;
+    width: 440px;
   }
 
   .form__filter {
@@ -345,10 +358,6 @@
     background-color: #dbdbdb;
   }
 
-  .form__filters {
-    position: relative;
-  }
-
   .form__filters::after {
     content: "";
 
@@ -407,6 +416,10 @@
     width: 178px;
   }
 
+  .form__login .form__field--long {
+    width: 216px;
+  }
+
   .form__field--tel,
   .form-field--email {
     background-position: 610px center;
@@ -447,6 +460,8 @@
   }
 
   .form__filters {
+    position: relative;
+
     order: 1;
   }
 
@@ -597,6 +612,10 @@
     width: 290px;
   }
 
+  .form__login .form__field--long {
+    width: 325px;
+  }
+
   .form__contacts {
     order: 3;
     width: 960px;
@@ -604,16 +623,28 @@
 
   .form__contacts .form__label {
     margin: 0;
+    margin-top: 25px;
     padding: 0;
   }
 
   .form__contacts-wrapper {
     display: flex;
     justify-content: space-between;
+
+    margin: 0;
+  }
+
+  .form__contacts-wrapper p {
+    display: flex;
   }
 
   .form__contacts .form__field {
     width: 315px;
+  }
+
+  .form__field--tel,
+  .form-field--email {
+    background-position: 300px center;
   }
 
   .form__wrapper-attraction {

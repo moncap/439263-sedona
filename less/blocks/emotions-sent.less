@@ -1,6 +1,17 @@
+.emotions-sent {
+  display: none;
+  position: fixed;
+  top: 230px;
+  left: 25%;
+
+  width: 320px;
+
+  background-color: #ffffff;
+}
+
 .emotions-sent__title {
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -11,14 +22,14 @@
   text-transform: uppercase;
 }
 
-.emotions-sent {
-  margin: 0 auto;
-  width: 320px;
-}
-
-@media (min-width: @tablet-width){
+@media (min-width: @tablet-width) {
   .emotions-sent {
     width: 640px;
+  }
+
+  .emotions-sent__title {
+    font-size: 30px;
+    line-height: 30px;
   }
 
   .emotions-sent__wrapper {
@@ -37,5 +48,3 @@
     width: 460px;
   }
 }
-
-@media (min-width: @desktop-width){}
