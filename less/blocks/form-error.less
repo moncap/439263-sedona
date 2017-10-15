@@ -1,6 +1,6 @@
 .form-error__title {
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 30px;
+  line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -10,3 +10,37 @@
   line-height: 24px;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .form-error {
+    width: 400px;
+  }
+
+  .form-error__wrapper {
+    padding-top: 65px;
+    padding-bottom: 49px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .form-error__title {
+    margin: 0 auto;
+    margin-bottom: 37px;
+
+    display: block;
+    width: 220px;
+  }
+
+  .form-error__text {
+    margin: 0;
+    margin-bottom: 17px;
+  }
+
+  .form-error__button {
+    margin-bottom: 0;
+
+    width: 272px;
+  }
+}
+
+@media (min-width: @desktop-width){}

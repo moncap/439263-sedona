@@ -1,6 +1,6 @@
 .emotions-sent__title {
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 30px;
+  line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -15,3 +15,27 @@
   margin: 0 auto;
   width: 320px;
 }
+
+@media (min-width: @tablet-width){
+  .emotions-sent {
+    width: 640px;
+  }
+
+  .emotions-sent__wrapper {
+    padding: 0 113px;
+    padding-top: 65px;
+    padding-bottom: 38px;
+  }
+
+  .emotions-sent__background {
+    padding: 47px 90px;
+    background-color: #f2f2f2;
+  }
+
+  .emotions-sent__button {
+    margin: 0;
+    width: 460px;
+  }
+}
+
+@media (min-width: @desktop-width){}

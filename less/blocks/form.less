@@ -289,6 +289,80 @@
     border: none;
   }
 
+  .form__title {
+    position: relative;
+  }
+
+  .form__contacts .form__title::before {
+    content: "";
+
+    position: absolute;
+    left: 10px;
+    top: 10px;
+
+    width: 125px;
+    height: 1px;
+
+    background-color: #dbdbdb;
+  }
+
+  .form__contacts .form__title::after {
+    content: "";
+
+    position: absolute;
+    left: 540px;
+    top: 10px;
+
+    width: 125px;
+    height: 1px;
+
+    background-color: #dbdbdb;
+  }
+
+  .form__attraction .form__title::before {
+    content: "";
+
+    position: absolute;
+    left: -170px;
+    top: 20px;
+
+    width: 125px;
+    height: 1px;
+
+    background-color: #dbdbdb;
+  }
+
+  .form__attraction .form__title::after {
+    content: "";
+
+    position: absolute;
+    left: 340px;
+    top: 20px;
+
+    width: 125px;
+    height: 1px;
+
+    background-color: #dbdbdb;
+  }
+
+  .form__filters {
+    position: relative;
+  }
+
+  .form__filters::after {
+    content: "";
+
+    position: absolute;
+    top: 30px;
+    left: 380px;
+
+    height: 292px;
+    width: 1px;
+
+
+    background-color: #dbdbdb;
+  }
+
   .form__filters .form__title {
     margin-bottom: 78px;
     margin-left: 63px;
@@ -463,9 +537,41 @@
     padding-top: 57px;
   }
 
+  .form__contacts .form__title::before {
+    left: -50px;
+    top: 10px;
+
+    width: 280px;
+  }
+
+  .form__contacts .form__title::after {
+    left: 650px;
+    top: 10px;
+
+    width: 280px;
+  }
+
+  .form__attraction .form__title::before {
+    left: -300px;
+    top: 20px;
+
+    width: 280px;
+  }
+
+  .form__attraction .form__title::after {
+    left: 340px;
+    top: 20px;
+
+    width: 280px;
+  }
+
   .form__filter {
     width: 960px;
     margin: 0 auto;
+  }
+
+  .form__filters::after {
+    left: 500px;
   }
 
   .form__filters-wrapper {
@@ -555,5 +661,9 @@
 
   .form__button {
     width: 480px;
+  }
+
+  .form__hide {
+    display: none;
   }
 }
