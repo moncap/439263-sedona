@@ -7,8 +7,8 @@
 
 .page-header__logo {
   position: absolute;
+  right: 50%;
 
-  left: 115px;
   z-index: 2;
 }
 
@@ -19,11 +19,10 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  clip-path: polygon(0 93%, 0 0, 100% 0, 100% 93%, 50% 100%);
 }
 
 .page-header__text-index {
-  margin-top: 90px;
+  margin-top: 70px;
 
   width: 282px;
   height: 214px;
@@ -39,8 +38,6 @@
     height: 158px;
 
     background-position: bottom;
-
-    clip-path: polygon(0 132px, 0 0, 100% 0, 100% 132px, 50% 100%);
   }
 
   .page-header__text-index--submenu {
@@ -54,6 +51,8 @@
 @media (min-width: @tablet-width) {
   .page-header {
     margin-bottom: 50px;
+
+    width: 100%;
   }
 
   .page-header__background {
@@ -61,8 +60,6 @@
     height: 518px;
 
     background-size: cover;
-
-    clip-path: polygon(0% 0%, 100% 0%, 100% 482px, 734px 485px, 734px 461px, 50% 100%, 34px 461px, 34px 485px, 0% 482px);
   }
 
   .page-header__background--submenu {
@@ -70,8 +67,6 @@
     height: 290px;
 
     background-position: bottom;
-
-    clip-path: polygon(0% 0%, 100% 0%, 100% 254px, 734px 257px, 734px 233px, 50% 100%, 34px 233px, 34px 257px, 0% 254px);
   }
 
   .page-header__text-index--submenu {
@@ -96,7 +91,6 @@
   .page-header__background {
     width: 100%;
     height: 518px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 463px, 950px 485px, 950px 461px, 50% 100%, 250px 461px, 250px 485px, 0% 463px);
     background-size: cover;
   }
 
@@ -115,8 +109,6 @@
     height: 302px;
 
     background-position: bottom;
-
-    clip-path: polygon(0% 0%, 100% 0%, 100% 245px, 950px 268px, 950px 244px, 50% 100%, 250px 244px, 250px 268px, 0% 245px);
   }
 
   .page-header__text-index--submenu {

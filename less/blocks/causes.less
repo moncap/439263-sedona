@@ -34,6 +34,10 @@
   background-color: #d6d6d6;
 }
 
+.causes__wrapper {
+  width: 100%;
+}
+
 .causes__wrapper--short {
   background-color: #eeeeee;
 }
@@ -97,9 +101,11 @@
 }
 
 .causes__list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   padding-bottom: 35px;
+
+  width: 320px;
   text-align: left;
   background-color: #ffffff;
   list-style: none;
@@ -183,6 +189,8 @@
   .causes__list {
     display: flex;
     justify-content: space-between;
+
+    width: 768px;
     padding-top: 60px;
     padding-bottom: 33px;
     margin-bottom: 50px;
@@ -220,7 +228,6 @@
     display: flex;
     justify-content: space-around;
     padding: 0;
-    width: 768px;
   }
 
   .causes__wrapper--short {
@@ -247,10 +254,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .causes__wrapper {
-    width: 1200px;
-  }
-
   .causes__title {
     margin-bottom: 49px;
   }
