@@ -56,8 +56,8 @@
   }
 
   .site-list__item:nth-child(2) {
-    margin-right: 140px;
-    margin-left: 40px;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .site-list__link {
@@ -93,10 +93,14 @@
   }
 
   .site-list__logo {
-    position: absolute;
     display: block;
-    top: 0;
-    right: 329px;
+
+    position: absolute;
+    left: 50%;
+    margin-left: -51px;
+
+    margin-top: -15px;
+
     z-index: 2;
   }
 }
@@ -119,6 +123,6 @@
   }
 
   .site-list__logo {
-    right: 550px;
+    margin-top: -12px;
   }
 }
