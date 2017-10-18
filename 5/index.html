@@ -29,7 +29,7 @@
               <a class="site-list__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">HTML Academy</a>
+              <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -150,24 +150,6 @@
         </div>
       </div>
     </footer>
-  <script>
-    var navMain = document.querySelector('.main-nav__wrapper');
-    var navToggle = document.querySelector('.main-nav__toggle');
-    var navClose = document.querySelector('.main-nav__close');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      navMain.classList.add("main-nav--opened");
-      navToggle.classList.add("main-nav--top");
-    });
-
-    navClose.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      navMain.classList.remove("main-nav--opened");
-      navToggle.classList.remove("main-nav--top");
-    });
-  </script>
+  <script src="js/scripts.js"></script>
   </body>
 </html>
