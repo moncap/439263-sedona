@@ -162,8 +162,8 @@
   content: "";
 
   position: absolute;
-  top: 12px;
-  left: 15px;
+  top: 14px;
+  left: 14px;
 
   width: 22px;
   height: 22px;
@@ -279,8 +279,8 @@
   content: "";
 
   position: absolute;
-  top: 12px;
-  left: 12px;
+  top: 14px;
+  left: 15px;
 
   width: 22px;
   height: 22px;
@@ -292,6 +292,11 @@
   &:active {
     opacity: 0.2;
   }
+}
+
+.checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+  border-color: #663d15;
+  outline: thin dotted;
 }
 
 .form__emotions {
@@ -387,6 +392,10 @@
 
   .form__attraction .form__title {
     margin-bottom: 40px;
+  }
+
+  .form__attraction p {
+    margin-bottom: 47px;
   }
 
   .form__title--line {
@@ -532,7 +541,7 @@
 
   .form__attraction {
     padding-top: 23px;
-    padding-bottom: 22px;
+    padding-bottom: 39px;
 
     text-align: center;
 
@@ -551,17 +560,19 @@
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    margin-left: 169px;
-    width: 500px;
+    margin-left: 210px;
   }
 
   .checkbox input[type="checkbox"] + .checkbox-indicator {
-    left: -10px;
+    left: -53px;
   }
 
   .form__wrapper-attraction .checkbox {
-    display: block;
-    width: 230px;
+    display: inline-block;
+
+    width: 125px;
+
+    margin-right: 115px;
   }
 
   .form__attraction p:nth-child(1) {
@@ -685,12 +696,16 @@
   }
 
   .form__contacts {
-    order: 3;
+    padding-bottom: 0;
+    margin-bottom: 50px;
+
     width: 960px;
+
+    order: 3;
   }
 
   .form__contacts .form__title {
-    margin-bottom: 55px;
+    margin-bottom: 65px;
   }
 
   .form__contacts .form__label {
@@ -708,10 +723,13 @@
 
   .form__contacts-wrapper p {
     display: flex;
+
+    margin: 0;
   }
 
   .form__contacts .form__field {
     width: 295px;
+    margin-left: 15px;
   }
 
   .form__wrapper-attraction {
@@ -719,6 +737,7 @@
     flex-wrap: nowrap;
 
     margin: 0;
+    margin-left: 35px;
     width: auto;
   }
 
@@ -729,8 +748,12 @@
   .form__attraction {
     flex-wrap: nowrap;
 
-    margin-bottom: 10px;
-    padding-top: 15px;
+    padding: 0;
+    margin-bottom: 37px;
+  }
+
+  .checkbox input[type="checkbox"] + .checkbox-indicator {
+    left: -32px;
   }
 
   .form__wrapper-attraction .checkbox {
@@ -740,24 +763,24 @@
   }
 
   .form__attraction p:nth-child(1) {
-    margin-left: 10px;
-
     order: 1;
   }
 
   .form__attraction p:nth-child(2) {
-    margin-left: 0;
+    margin-left: 48px;
 
     order: 3;
   }
 
   .form__attraction p:nth-child(3) {
-    margin-left: 30px;
+    margin-left: 60px;
 
     order: 2;
   }
 
   .form__attraction p:nth-child(4) {
+    margin-left: 50px;
+
     order: 4;
   }
 
