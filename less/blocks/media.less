@@ -129,12 +129,13 @@
   background-color: #ffffff;
 
   opacity: 0.2;
+  cursor: pointer;
 }
 
 .media__toggle {
   position: absolute;
   top: 16px;
-  left: 20%;
+  left: 19%;
   width: 1px;
   height: 1px;
 
@@ -142,45 +143,6 @@
   border: 8px solid #ffffff;
   border-radius: 50%;
   background-color: #ffffff;
-}
-
-.media__replay,
-.media__subtitles,
-.media__fullscreen {
-  position: absolute;
-
-  display: block;
-  width: 23px;
-  height: 22px;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: transparent;
-
-  z-index: 2;
-  cursor: pointer;
-  border: none;
-}
-
-.media__replay {
-  bottom: -40px;
-  left: 25px;
-
-  background-image: url("../img/icon-video-replay.svg");
-}
-
-.media__subtitles {
-  bottom: -40px;
-  left: 174px;
-
-  background-image: url("../img/icon-video-subtitles.svg");
-}
-
-.media__fullscreen {
-  bottom: -40px;
-  left: 237px;
-
-  background-image: url("../img/icon-video-fullscreen.svg");
 }
 
 .media__panel {
@@ -212,11 +174,6 @@
 
   .media__header .media__text {
     width: 434px;
-  }
-
-  .media__presentation .media__text {
-    padding-bottom: 25px;
-    width: 419px;
   }
 
   .media__list {
@@ -284,7 +241,12 @@
 
   .media__presentation {
     padding: 0;
-    margin-bottom: 27px;
+    margin: 0;
+  }
+
+  .media__presentation .media__text {
+    margin-bottom: 83px;
+    width: 419px;
   }
 
   .media__range {
@@ -305,20 +267,6 @@
 
   .media__toggle {
     top: 40px;
-  }
-
-  .media__replay {
-    bottom: 37px;
-  }
-
-  .media__subtitles {
-    bottom: 37px;
-    left: 524px;
-  }
-
-  .media__fullscreen {
-    bottom: 37px;
-    left: 587px;
   }
 
   .media__panel {
@@ -371,6 +319,14 @@
     height: 267px;
   }
 
+  .media__presentation {
+    margin-bottom: 85px;
+  }
+
+  .media__presentation .media__text {
+    margin-bottom: 38px;
+  }
+
   .media__image--main {
     width: 1200px;
     height: 400px;
@@ -386,17 +342,5 @@
 
     margin-left: -398px;
     width: 796px;
-  }
-
-  .media__scale {
-    width: 542px;
-  }
-
-  .media__subtitles {
-    left: 675px;
-  }
-
-  .media__fullscreen {
-    left: 737px;
   }
 }

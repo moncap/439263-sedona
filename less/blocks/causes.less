@@ -16,7 +16,7 @@
 
 .causes__advantage--short {
   position: relative;
-  padding: 27px 0;
+  padding: 28px 0;
   margin: 0 auto;
 
   text-transform: uppercase;
@@ -62,7 +62,7 @@
 }
 
 .causes__description--background {
-  padding-top: 58px;
+  padding-top: 56px;
   padding-bottom: 39px;
   background-color: #81b3d2;
 
@@ -88,7 +88,7 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
-  font-family: "ms sans serif";
+  font-family: sans-serif;
   text-transform: uppercase;
 }
 
@@ -98,13 +98,15 @@
   margin: 0 auto;
   margin-top: 15px;
 
-  width: 270px;
+  width: 275px;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
 }
 
 .causes__advantage--short .causes__text {
+  margin-top: 12px;
+
   width: 250px;
 }
 
@@ -142,7 +144,7 @@
 }
 
 .causes__item--gifts {
-  padding-top: 25px;
+  padding-top: 27px;
 
   background-image: url("../img/icon-gift.svg");
 }
@@ -171,7 +173,7 @@
   }
 
   .causes__text {
-    margin-top: 20px;
+    margin-top: 22px;
     width: 170px;
   }
 
@@ -181,7 +183,7 @@
 
   .causes__description--background {
     padding: 0 38px;
-    padding-top: 42px;
+    padding-top: 45px;
     padding-bottom: 38px;
     width: 270px;
   }
@@ -211,20 +213,21 @@
     justify-content: space-around;
 
     width: 100%;
-    padding-top: 60px;
-    padding-bottom: 33px;
-    margin-bottom: 28px;
+    padding: 0;
+    margin-top: 60px;
+    margin-bottom: 61px;
 
     text-align: center;
   }
 
-  .causes__item:nth-child(3) {
-    padding-top: 98px;
+  .causes__title-list {
+    font-size: 21px;
+    line-height: 26px;
   }
 
   .causes__item {
     padding-left: 0;
-    padding-top: 98px;
+    padding-top: 99px;
     background-position: 40px 0;
     background-size: 77px 68px;
   }
@@ -243,7 +246,7 @@
 
   .causes__description-list {
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 21px;
     width: 165px;
   }
 
@@ -280,6 +283,16 @@
   .causes__image--left {
     order: 1;
   }
+
+  .causes__advantage--short .causes__text {
+    margin-top: 20px;
+
+    width: 149px;
+  }
+
+  .causes__advantage--short .causes__text:nth-child(1) {
+    width: 150px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -305,8 +318,7 @@
   }
 
   .causes__list {
-    margin-bottom: 26px;
-    padding-bottom: 56px;
+    margin-bottom: 80px;
   }
 
   .causes__item {
