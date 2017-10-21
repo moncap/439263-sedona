@@ -10,32 +10,34 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper main-nav--closed">
           <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="photo.html">Фото и видео</a>
             </li>
             <li class="site-list__logo">
-              <img class="site-list__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
+              <a href="index.html">
+                <img class="site-list__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
+              </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Форма отзыва</a>
+              <a class="site-list__link">Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">HTML Academy</a>
+              <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
         </div>
-        <a class="page-header__logo">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
         </a>
-        <div class="page-header__background">
-          <img class="page-header__text-index" src="img/text-sedona-index.svg" width="282" height="214"  alt="Sedona">
+        <div class="page-header__background page-header__background--submenu">
+          <img class="page-header__text-index" src="" width="282" height="214"  alt="Sedona">
         </div>
       </nav>
     </header>
@@ -43,7 +45,7 @@
       <h1 class="visually-hidden">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
       <section class="form">
         <header class="form__header">
-          <h2 class="form__title">Оставьте свой отзыв</h2>
+          <h2 class="form__main-title">Оставьте свой отзыв</h2>
           <p class="form__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
         <form class="form__filter" method="get" action="https://echo.htmlacademy.ru">
@@ -52,7 +54,7 @@
               <h2 class="form__title">Представьтесь:</h2>
               <p>
                 <label class="form__label" for="name">Имя<sup>*</sup>:</label>
-                <input class="form__field" id="name" type="text" name="first-name" placeholder="Петр">
+                <input class="form__field form__field--long" id="name" type="text" name="first-name" placeholder="Петр">
               </p>
               <p>
                 <label class="form__label" for="surname">Фамилия<sup>*</sup>:</label>
@@ -60,58 +62,51 @@
               </p>
               <p>
                 <label class="form__label" for="patronymic">Отчeство:</label>
-                <label class="form__label" for="name">Имя<sup>*</sup>:</label>
-                <input class="form__field" id="name" type="text" name="first-name" placeholder="Петр">
-              </p>
-              <p>
-                <label class="form__label" for="surname">Фамилия<sup>*</sup>:</label>
-                <input class="form__field" id="surname" type="text" name="surname" placeholder="Иванов">
-              </p>
-              <p>
-                <label class="form__label" for="patronymic">Отчeство:</label>
-                <input class="form__field" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+                <input class="form__field" id="name" type="text" name="patronymic" placeholder="Александрович">
               </p>
             </div>
             <div class="form__contacts">
-              <h2 class="form__title">Контактная информация:</h2>
+              <h2 class="form__title form__title--line">Контактная информация:</h2>
               <div class="form__contacts-wrapper">
                 <p>
-                  <label class="form__label" for="tel">Контактный телефон<sup>*</sup>:</label>
-                  <input class="form__field form__field--tel" id="tel" type="tel" name="tel" placeholder="Введите телефон">
+                  <label class="form__label" for="tel"><span class="form__hide">Контактный</span> телефон<sup>*</sup>:</label>
+                  <input class="form__field" id="tel" type="tel" name="tel" placeholder="Введите телефон">
                 </p>
                 <p>
                   <label class="form__label" for="email">Электронная почта<sup>*</sup>:</label>
-                  <input class="form__field form-field--email" id="email" type="email" name="email" placeholder="Введите e-mail">
+                  <input class="form__field" id="email" type="email" name="email" placeholder="Введите e-mail">
                 </p>
               </div>
             </div>
             <div class="form__filters">
               <h2 class="form__title">Ваше общее впечатление:</h2>
-              <p>
-                <label class="radio">
-                    <input class="visually-hidden" type="radio" name="impression" value="positively" checked>
-                    <span class="form__radio-indicator"></span>
-                    Скорее положительное
-                </label>
-              </p>
-              <p>
-                <label class="radio">
-                    <input class="visually-hidden" type="radio" name="impression" value="negative">
-                    <span class="form__radio-indicator"></span>
-                    Скорее отрицательное
-                </label>
-              </p>
-              <p>
-                <label class="radio">
-                    <input class="visually-hidden" type="radio" name="impression" value="difficult">
-                    <span class="form__radio-indicator"></span>
-                    Затрудняюсь ответить
-                </label>
-              </p>
+              <div class="form__filters-wrapper">
+                <p>
+                  <label class="radio">
+                      <input class="visually-hidden" type="radio" name="impression" value="positively" checked>
+                      <span class="radio-indicator"></span>
+                      Скорее положительное
+                  </label>
+                </p>
+                <p>
+                  <label class="radio">
+                      <input class="visually-hidden" type="radio" name="impression" value="negative">
+                      <span class="radio-indicator"></span>
+                      Скорее отрицательное
+                  </label>
+                </p>
+                <p>
+                  <label class="radio">
+                      <input class="visually-hidden" type="radio" name="impression" value="difficult">
+                      <span class="radio-indicator"></span>
+                      Затрудняюсь ответить
+                  </label>
+                </p>
+              </div>
             </div>
           </div>
           <div class="form__attraction">
-            <h2 class="form__title">посещенные достопримечательности:</h2>
+            <h2 class="form__title form__title--line form__title--line-bottom">посещенные достопримечательности:</h2>
             <div class="form__wrapper-attraction">
               <p>
                 <label class="checkbox">
@@ -144,10 +139,13 @@
             </div>
           </div>
           <div class="form__emotions">
-            <label class="form__label" for="text">Опишите свои эмоции:</label>
-            <textarea class="form__text" id="text" name="text" placeholder="Опишите подробно все свои восторги "></textarea>
+            <h2 class="form__title form__title--line">Опишите свои эмоции:</h2>
+            <textarea class="form__textarea" id="text" name="text" placeholder="Опишите подробно все свои восторги "></textarea>
           </div>
-          <button class="form__button button" type="submit">Отправить отзыв</button>
+          <div class="form__emotions-wrapper">
+            <button class="form__button button" type="submit">Отправить отзыв</button>
+            <p class="form__compulsory"><sup>*</sup> - обязательные поля</p>
+          </div>
         </form>
       </section>
     </main>
@@ -158,38 +156,60 @@
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__button social__button--twitter" href="#">Twitter</a>
+                <a class="social__button social__button--twitter" href="#"><span class="visually-hidden">Twitter</span>
+                  <svg fill="#ffffff" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                    <g id="W6EeEF_1_">
+                      <g>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__button social__button--facebook" href="#">Facebook</a>
+                <a class="social__button social__button--facebook" href="#"><span class="visually-hidden">Facebook</span>
+                  <svg fill="#ffffff" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+                    <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+                  </svg>
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__button social__button--youtube" href="#">YouTube</a>
+                <a class="social__button social__button--youtube" href="#"><span class="visually-hidden">YouTube</span>
+                  <svg fill="#ffffff" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+                    <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__button" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy<</span></a>
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__button" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__htmlacademy" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+              <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+            </svg>
+            <span class="visually-hidden">HTML Academy<</span>
+          </a>
         </div>
       </div>
     </footer>
+    <section class="form-error">
+      <div class="form-error__wrapper">
+        <h2 class="form-error__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+        <p class="form-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="form-error__button button" type="button">Ok</button>
+      </div>
+    </section>
+    <section class="emotions-sent">
+      <div class="emotions-sent__wrapper">
+        <h2 class="emotions-sent__title">Ваш отзыв отправлен!</h2>
+        <p class="emotions-sent__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="emotions-sent__background">
+        <button class="emotions-sent__button button">Закрыть окно</button>
+      </div>
+    </section>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
-
-<section class="form-error">
-  <div class="form-error__wrapper">
-    <h2 class="form-error__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
-    <p class="form-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="form-error__button button" type="button">Ok</button>
-  </div>
-</section>
-
-<section class="emotions-sent">
-  <div class="emotions-sent__wrapper">
-    <h2 class="emotions-sent__title">Ваш отзыв отправлен!</h2>
-    <p class="emotions-sent__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
-    <button class="emotions-sent__button button">Закрыть окно</button>
-  </div>
-</section>

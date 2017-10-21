@@ -1,0 +1,150 @@
+.video-panel {
+  position: relative;
+
+  display: flex;
+  justify-content: space-betwen;
+  align-items: center;
+
+  margin: 0 auto;
+
+  width: 280px;
+  height: 66px;
+
+  background-color: #f2f2f2;
+}
+
+.video-panel__range {
+  position: absolute;
+
+  left: 50%;
+  bottom: 65px;
+  margin-left: -140px;
+
+  width: 100%;
+  height: 45px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.video-panel__scale {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -118px;
+  width: 236px;
+  height: 3px;
+  background-color: #ffffff;
+
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.video-panel__toggle {
+  position: absolute;
+  top: 19px;
+  left: 21%;
+  width: 8px;
+  height: 8px;
+
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.video-panel__replay,
+.video-panel__subtitles,
+.video-panel__fullscreen {
+  display: block;
+  width: 23px;
+  height: 22px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+
+  cursor: pointer;
+  border: none;
+}
+
+.video-panel__replay {
+  margin-right: auto;
+  margin-left: 20px;
+
+  background-image: url("../img/icon-video-replay.svg");
+}
+
+.video-panel__subtitles {
+  margin-right: 50px;
+
+  background-image: url("../img/icon-video-subtitles.svg");
+}
+
+.video-panel__fullscreen {
+  margin-right: 20px;
+
+  background-image: url("../img/icon-video-fullscreen.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .video-panel {
+    margin-top: -140px;
+
+    width: 648px;
+    height: 94px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .video-panel__range {
+    bottom: 0;
+
+    margin-left: -324px;
+
+    width: 648px;
+    height: 94px;
+
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .video-panel__scale {
+    left: 0;
+    margin-left: 93px;
+
+    width: 389px;
+  }
+
+  .video-panel__toggle {
+    top: 45px;
+    left: 32%;
+  }
+
+  .video-panel__replay {
+    margin-left: 30px;
+  }
+
+  .video-panel__subtitles {
+    margin-right: 40px;
+  }
+
+  .video-panel__fullscreen {
+    margin-right: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video-panel {
+    margin-top: -95px;
+
+    width: 796px;
+  }
+
+  .video-panel__scale {
+    margin-left: 18px;
+
+    width: 537px;
+  }
+
+  .video-panel__toggle {
+    left: 20%;
+  }
+}
