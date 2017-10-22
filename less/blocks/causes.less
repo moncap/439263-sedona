@@ -2,16 +2,32 @@
   background-color: #ffffff;
 }
 
-.causes__title {
+.causes__main-title {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 28px;
+
+  display: block;
+  width: 258px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.causes__paragraph {
   margin: 0 auto;
   margin-bottom: 26px;
 
-  disolay: block;
+  display: block;
   width: 280px;
 
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .causes__advantage--short {
@@ -55,7 +71,10 @@
   display: block;
   margin: 0;
   margin-top: 15px;
+
   width: 235px;
+
+  color: #000000;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
@@ -159,6 +178,7 @@
 }
 
 .causes__title-list {
+  color: #000000;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -166,7 +186,18 @@
 }
 
 @media (min-width: @tablet-width) {
-  .causes__title {
+  .causes__main-title {
+    display: block;
+
+    margin: 0 auto;
+    margin-bottom: 28px;
+    width: 500px;
+
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .causes__paragraph {
     width: auto;
     margin-bottom: 49px;
   }
@@ -234,14 +265,20 @@
   }
 
   .causes__item--hotel {
+    margin-left: 10px;
+
     order: 1;
   }
 
   .causes__item--gifts {
+    margin-left: 10px;
+
     order: 3;
   }
 
   .causes__item--food {
+    margin-left: 15px;
+
     order: 2;
   }
 
@@ -295,7 +332,11 @@
 }
 
 @media (min-width: @desktop-width) {
-  .causes__title {
+  .causes__main-title {
+    margin-bottom: 30px;
+  }
+
+  .causes__paragraph {
     margin-bottom: 49px;
   }
 
@@ -314,6 +355,10 @@
 
   .causes__list {
     margin-bottom: 80px;
+  }
+
+  .causes__list .causes__item {
+    margin-left: 0;
   }
 
   .causes__item {
