@@ -2,14 +2,14 @@
   font-weight: normal;
   font-family: "PT Sans";
   font-style: normal;
-  src: url("fonts/ptsans.woff2") format("woff2"), url("fonts/ptsans.woff") format("woff");
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
 }
 
 @font-face {
   font-weight: bold;
   font-family: "PT Sans";
   font-style: normal;
-  src: url("fonts/ptsansbold.woff2") format("woff2"), url("fonts/ptsansbold.woff") format("woff");
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
 }
 
 body {
@@ -19,6 +19,7 @@ body {
 
   font-size: 14px;
   line-height: 24px;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   text-align: center;
 
@@ -39,7 +40,19 @@ img {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: inherit;
+  font-weight: bold;
 
   background-color: #81b3d2;
   border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #669ec0;
+}
+
+.button:active {
+  color: #88b6d1;
+  background-color: #5496bd;
 }

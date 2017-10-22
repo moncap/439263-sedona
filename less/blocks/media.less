@@ -2,7 +2,15 @@
   background-color: #ffffff;
 }
 
+.media__header {
+  padding: 0 25px;
+  padding-top: 38px;
+  padding-bottom: 27px;
+}
+
 .media__title {
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -10,19 +18,48 @@
 }
 
 .media__text {
+  display: block;
+
+  margin: 0 auto;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
 }
 
+.media__header .media__text {
+  width: 270px;
+}
+
+.media__presentation .media__text {
+  padding: 0 25px;
+  padding-bottom: 35px;
+
+  width: 244px;
+}
+
 .media__list {
   margin: 0;
+  margin-bottom: 35px;
   padding: 0;
   list-style: none;
 }
 
+.media__item {
+  padding-top: 22px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.media__item:nth-child(4) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
 .media__description {
-  padding-left: 20px;
+  margin: 0 auto;
+  padding-top: 8px;
+  padding-bottom: 15px;
+  padding-left: 0;
+
+  width: 280px;
   text-align: left;
 }
 
@@ -34,12 +71,15 @@
 }
 
 .media__author {
+  margin: 0;
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 24px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .media__like {
+  padding-top: 10px;
   padding-left: 38px;
   font-size: 14px;
   line-height: 24px;
@@ -48,6 +88,22 @@
 
   background-image: url("../img/icon-like.svg");
   background-repeat: no-repeat;
+  background-position: left center;
+
+  cursor: pointer;
+}
+
+.media__presentation {
+  position: relative;
+
+  margin-bottom: 37px;
+}
+
+.media__video {
+  position: relative;
+  display: block;
+
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
@@ -56,9 +112,39 @@
     margin: 0 auto;
   }
 
+  .media__header {
+    padding-bottom: 0;
+    padding-top: 20px;
+    margin-bottom: 68px;
+  }
+
+  .media__title {
+    margin: 0;
+    margin-bottom: 29px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .media__header .media__text {
+    width: 434px;
+  }
+
   .media__list {
     display: flex;
     flex-wrap: wrap;
+
+    margin-bottom: 64px;
+  }
+
+  .media__item {
+    display: block;
+    padding: 0;
+  }
+
+  .media__image {
+    display: block;
+    width: 324px;
+    height: 267px;
   }
 
   .media__image--main {
@@ -66,23 +152,56 @@
     height: 400px;
   }
 
-  .media__item {
-    text-align: left;
+  .media__like {
+    padding-top: 0;
+    margin-top: 12px;
+    margin-right: 35px;
+
+    background-position: 10px 0;
   }
 
-  .media__item:nth-child(3) {
-    padding-left: 60px;
+  .media__description--main .media__like {
+    margin-right: 20px;
   }
 
   .media__description {
-    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 17px;
+    padding-bottom: 5px;
+    width: 324px;
 
     background-color: #f2f2f2;
   }
 
-  .media_video {
+  .media__description--color {
+    background-color: #eaeaea;
+  }
+
+  .media__description--main {
+    width: 648px;
+  }
+
+  .media__description-wrapper {
+    margin-left: 20px;
+  }
+
+  .media__video {
+    margin-top: 0;
     width: 648px;
     height: 499px;
+  }
+
+  .media__presentation {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .media__presentation .media__text {
+    margin-bottom: 71px;
+    padding-bottom: 0;
+    width: 419px;
   }
 }
 
@@ -91,13 +210,35 @@
     width: 1200px;
   }
 
+  .media__header {
+    padding-top: 60px;
+    padding-bottom: 0;
+    margin-bottom: 67px;
+  }
+
   .media__list {
     display: flex;
     flex-wrap: wrap;
   }
 
   .media__item {
+    position: relative;
     padding: 0;
+  }
+
+  .media__description {
+    position: absolute;
+    width: 100%;
+
+    bottom: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .media__subtitle,
+  .media__author,
+  .media__like {
+    color: #ffffff;
   }
 
   .media__item:nth-child(3) {
@@ -109,12 +250,20 @@
     height: 267px;
   }
 
+  .media__presentation {
+    margin-bottom: 85px;
+  }
+
+  .media__presentation .media__text {
+    margin-bottom: 75px;
+  }
+
   .media__image--main {
     width: 1200px;
     height: 400px;
   }
 
-  .media_video {
+  .media__video {
     width: 800px;
     height: 500px;
   }

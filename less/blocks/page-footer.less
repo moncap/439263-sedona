@@ -1,6 +1,6 @@
 .page-footer {
   margin: 0 auto;
-  margin-top: 40px;
+  padding-top: 36px;
   width: 320px;
   background-color: #ffffff;
 }
@@ -13,15 +13,39 @@
   text-decoration: none;
 }
 
+.page-footer__contacts {
+  margin-top: 35px;
+  margin-bottom: 45px;
+}
+
+.page-footer__copyright {
+  margin-bottom: 30px;
+}
+
 @media (min-width: @tablet-width) {
   .page-footer {
     margin: 0 auto;
+    padding: 36px 0;
     width: 768px;
   }
 
   .page-footer__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .page-footer__visit {
+    margin-left: 6px;
+  }
+
+  .page-footer__contacts {
+    margin: 0;
+  }
+
+  .page-footer__copyright {
+    margin: 0;
+    margin-right: 5px;
   }
 }
 
@@ -32,6 +56,18 @@
 
   .page-footer__wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  .page-footer__visit {
+    margin-left: 135px;
+  }
+
+  .page-footer__contacts {
+    margin-right: 92px;
+  }
+
+  .page-footer__copyright {
+    margin-right: 41px;
   }
 }
