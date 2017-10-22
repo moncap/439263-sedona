@@ -766,7 +766,7 @@ img {
   text-transform: uppercase;
   color: #000000;
 }
-.causes__text-header {
+.causes__paragraph {
   margin: 0 auto;
   margin-bottom: 26px;
   display: block;
@@ -903,7 +903,7 @@ img {
     font-size: 21px;
     line-height: 26px;
   }
-  .causes__text-header {
+  .causes__paragraph {
     width: auto;
     margin-bottom: 49px;
   }
@@ -1024,7 +1024,7 @@ img {
   .causes__main-title {
     margin-bottom: 30px;
   }
-  .causes__text-header {
+  .causes__paragraph {
     margin-bottom: 49px;
   }
   .causes__description {
