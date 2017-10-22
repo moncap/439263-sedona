@@ -21,6 +21,12 @@
   background-position: center;
 }
 
+.page-header__intro--submenu {
+  height: 158px;
+
+  background-position: bottom;
+}
+
 .page-header__text-image {
   margin-top: 93px;
 
@@ -28,25 +34,13 @@
   height: 214px;
 }
 
+.page-header__text-image--submenu {
+  display: none;
+}
+
 @media (max-width: @mobile-width-only) {
   .page-header__intro {
     margin-top: 56px;
-  }
-
-  .page-header__background--submenu {
-    position: relative;
-    height: 158px;
-
-    background-position: bottom;
-  }
-
-  .page-header__text-index--submenu {
-    position: absolute;
-
-    top: -120px;
-    left: 50%;
-
-    margin-left: -141px;
   }
 }
 
@@ -68,14 +62,14 @@
     z-index: 1;
   }
 
-  .page-header__background--submenu {
+  .page-header__intro--submenu {
     position: relative;
     height: 290px;
 
     background-position: bottom;
   }
 
-  .page-header__text-index--submenu {
+  .page-header__text-image--submenu {
     position: absolute;
 
     top: -120px;
@@ -112,7 +106,7 @@
     height: 350px;
   }
 
-  .page-header__background--submenu {
+  .page-header__intro--submenu {
     position: relative;
     height: 302px;
 
