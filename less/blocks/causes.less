@@ -61,6 +61,19 @@
   background-color: #eeeeee;
 }
 
+.causes__overlay {
+  position: absolute;
+  top: -21px;
+
+  width: 100%;
+  height: 37px;
+
+  background-image: url("../img/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 768px 37px;
+}
+
 .causes__description {
   font-size: 14px;
   line-height: 21px;
@@ -81,6 +94,8 @@
 }
 
 .causes__description--background {
+  position: relative;
+
   padding-top: 56px;
   padding-bottom: 39px;
   background-color: #81b3d2;
@@ -133,6 +148,7 @@
 
   margin: 0 auto;
 
+  width: 320px;
   height: 260px;
 }
 
@@ -148,23 +164,27 @@
 }
 
 .causes__item {
+  position: relative;
+
   padding-top: 34px;
   padding-left: 71px;
-
-  background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-position: 21px 25px;
-  background-size: 40px 35px;
 }
 
-.causes__item--hotel {
-  background-image: url("../img/icon-house.svg");
+.causes__hotel,
+.causes__gift,
+.causes__food {
+  position: absolute;
+  top: 30px;
+  left: 19px;
+
+  width: 39px;
+  height: 37px;
+
+  fill: #81b3d2;
 }
 
 .causes__item--gifts {
   padding-top: 27px;
-
-  background-image: url("../img/icon-gift.svg");
 }
 
 .causes__item--food .causes__description-list {
@@ -173,8 +193,6 @@
 
 .causes__item--food {
   padding-top: 28px;
-
-  background-image: url("../img/icon-burger.svg");
 }
 
 .causes__title-list {
@@ -186,6 +204,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  .causes {
+    margin: 0 auto;
+
+    width: 768px;
+  }
+
   .causes__main-title {
     display: block;
 
@@ -217,7 +241,8 @@
     padding: 0 38px;
     padding-top: 43px;
     padding-bottom: 38px;
-    width: 270px;
+
+    width: 180px;
   }
 
   .causes__subtitle {
@@ -236,7 +261,7 @@
   }
 
   .causes__image {
-    width: 100%;
+    width: 512px;
     height: 256px;
   }
 
@@ -262,6 +287,16 @@
     padding-top: 99px;
     background-position: 40px 0;
     background-size: 77px 68px;
+  }
+
+  .causes__hotel,
+  .causes__gift,
+  .causes__food {
+    left: 38px;
+    top: 0;
+
+    width: 75px;
+    height: 72px;
   }
 
   .causes__item--hotel {
@@ -329,9 +364,17 @@
   .causes__advantage--short .causes__text:nth-child(1) {
     width: 150px;
   }
+
+  .causes__overlay {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .causes {
+    width: 1200px;
+  }
+
   .causes__main-title {
     margin-bottom: 30px;
   }
@@ -349,7 +392,7 @@
   }
 
   .causes__image {
-    width: 100%;
+    width: 800px;
     height: 256px;
   }
 
@@ -363,6 +406,12 @@
 
   .causes__item {
     background-position: 105px 0;
+  }
+
+  .causes__hotel,
+  .causes__gift,
+  .causes__food {
+    left: 105px;
   }
 
   .causes__text {
@@ -382,7 +431,7 @@
   }
 
   .causes__description--background {
-    width: 470px;
+    width: 313px;
     padding: 0 45px;
     padding-top: 53px;
     padding-bottom: 20px;

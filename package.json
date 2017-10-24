@@ -37,5 +37,9 @@
   ],
   "engines": {
     "node": "8.2"
+  },
+  "dependencies": {
+    "cwebp": "^2.0.2",
+    "gulp-webp": "^2.3.0"
   }
 }
