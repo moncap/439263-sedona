@@ -21,7 +21,11 @@
             </li>
             <li class="site-list__logo">
               <a href="index.html">
-                <img class="site-list__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                  <img class="site-list__logo-image" src="img/logo-sedona-mobile.svg" alt="City of Sedona">
+                </picture>
               </a>
             </li>
             <li class="site-list__item">
@@ -50,7 +54,11 @@
         </header>
         <ul class="media__list">
           <li class="media__item">
-            <img class="media__image media__image--main" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+              <img class="media__image media__image--main" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x"  alt="Неродные просторы">
+            </picture>
             <div class="media__description media__description--main">
               <div class="media__description-wrapper">
                 <b class="media__subtitle">Неродные просторы</b>
@@ -60,7 +68,11 @@
             </div>
           </li>
           <li class="media__item">
-            <img class="media__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+              <img class="media__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность">
+            </picture>
             <div class="media__description">
               <div class="media__description-wrapper">
                 <b class="media__subtitle">Местная растительность</b>
@@ -70,7 +82,11 @@
             </div>
           </li>
           <li class="media__item">
-            <img class="media__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+              <img class="media__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
+            </picture>
             <div class="media__description media__description--color">
               <div class="media__description-wrapper">
                 <b class="media__subtitle">Дорога на север</b>
@@ -80,7 +96,11 @@
             </div>
           </li>
           <li class="media__item">
-            <img class="media__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img class="media__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
+            </picture>
             <div class="media__description">
               <div class="media__description-wrapper">
                 <b class="media__subtitle">Мост дьявола</b>
@@ -93,10 +113,11 @@
         <div class="media__presentation">
           <h2 class="media__title">Все еще сомневаетесь?</h2>
           <p class="media__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <video class="media__video" width="320" height="200" poster="img/video-mobile@1x.jpg">
-            <source src="" type="">
-            Видеопрезентация
-          </video>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="media__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видеопрезентация">
+          </picture>
           <div class="media__video video-panel">
             <div class="video-panel__range">
               <div class="video-panel__scale"></div>

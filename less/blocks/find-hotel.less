@@ -49,6 +49,11 @@
   background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
 }
 
 .find-hotel__map iframe {
@@ -64,6 +69,13 @@
   .find-hotel__map {
     width: 100%;
     height: 350px;
+
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-size: cover;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
   }
 
   .find-hotel__title {
@@ -90,6 +102,13 @@
   .find-hotel__map {
     width: 100%;
     height: 350px;
+
+    background-size: cover;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
   }
 
   .find-hotel__button {
