@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 27px;
+  padding-top: 30px;
 }
 
 .find-hotel__title {
@@ -61,6 +61,10 @@
   height: 100%;
 }
 
+.find-hotel__hidden {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .find-hotel {
     padding-top: 53px;
@@ -95,6 +99,10 @@
     width: 458px;
     margin-bottom: 57px;
     padding: 15px 15px;
+  }
+
+  .find-hotel__hidden {
+    display: block;
   }
 }
 
