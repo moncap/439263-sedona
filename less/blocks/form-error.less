@@ -1,9 +1,10 @@
 .form-error {
   display: none;
   position: fixed;
-  top: 230px;
-  left: 25%;
+  top: 430px;
+  left: 50%;
 
+  margin-left: -160px;
   padding-top: 43px;
   padding-bottom: 36px;
 
@@ -47,32 +48,13 @@
   line-height: 26px;
 }
 
-/*@-webkit-keyframes bounce {
-  0% {
-    transform: translateX(-2000px);
-  }
-
-  70% {
-    transform: translateX(30px);
-  }
-
-  90% {
-    transform: translateX(-10px);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}*/
-
 .form-error__show {
   display: block;
-
-  animation: bounce 0.6s;
 }
 
 @media (min-width: @tablet-width) {
   .form-error {
+    margin-left: -200px;
     padding: 0;
 
     width: 400px;
