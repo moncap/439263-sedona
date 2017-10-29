@@ -155,8 +155,14 @@
   border-radius: 50%;
 }
 
-.form__radio input[type="radio"]:hover + .form__radio-indicator,
 .form__radio input[type="radio"]:focus + .form__radio-indicator {
+  background-color: #e5e5e5;
+
+  border-color: #663d15;
+  outline: thin dotted;
+}
+
+.form__radio input[type="radio"]:hover + .form__radio-indicator {
   background-color: #e5e5e5;
 }
 
@@ -180,11 +186,6 @@
 
 .form__radio input[type="radio"]:active + .form__radio-indicator::before {
   background-color: #a4a4a4;
-}
-
-.form__radio input[type="radio"]:focus + .form__radio-indicator {
-  border-color: #663d15;
-  outline: thin dotted;
 }
 
 .form__filters label,
