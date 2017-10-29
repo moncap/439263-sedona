@@ -8,7 +8,7 @@
 }
 
 .form__header {
-  padding-top: 37px;
+  padding-top: 36px;
   padding-bottom: 17px;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
@@ -44,7 +44,7 @@
 .form__login {
   margin: 0;
   margin-left: 20px;
-  padding-bottom: 3px;
+  padding-bottom: 4px;
   padding-top: 18px;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -69,8 +69,8 @@
 }
 
 .form__contacts {
-  padding-top: 19px;
-  padding-bottom: 13px;
+  padding-top: 18px;
+  padding-bottom: 15px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -131,11 +131,11 @@
 }
 
 .form__filters {
-  padding-top: 20px;
+  padding-top: 18px;
 }
 
 .form__filters h2 {
-  margin-bottom: 38px;
+  margin-bottom: 37px;
 }
 
 .form__filters-wrapper {
@@ -203,6 +203,10 @@
   cursor: pointer;
 }
 
+.form__filters p:nth-child(2) {
+  margin-bottom: 44px;
+}
+
 .radio {
   font-size: 18px;
   line-height: 26px;
@@ -241,13 +245,13 @@
 }
 
 .form__attraction {
-  padding-top: 20px;
-  padding-bottom: 38px;
+  padding-top: 19px;
+  padding-bottom: 40px;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .form__attraction .form__title {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .form__wrapper-attraction {
@@ -258,6 +262,10 @@
   position: relative;
   margin-bottom: 55px;
   cursor: pointer;
+}
+
+.form__wrapper-attraction p:nth-child(2) {
+  margin-bottom: 53px;
 }
 
 .form__wrapper-attraction p:nth-child(4) {
@@ -271,10 +279,10 @@
 .form__checkbox input[type="checkbox"] + .form__checkbox-indicator {
   position: absolute;
   top: -10px;
-  left: -55px;
+  left: -58px;
 
-  width: 50px;
-  height: 50px;
+  width: 56px;
+  height: 56px;
 
   background-color: #f2f2f2;
   border-radius: 5px;
@@ -294,7 +302,7 @@
 
   position: absolute;
   top: 14px;
-  left: 15px;
+  left: 18px;
 
   width: 22px;
   height: 22px;
@@ -329,12 +337,12 @@
 }
 
 .form__textarea {
-  margin-bottom: 47px;
+  margin-bottom: 46px;
   padding: 17px 0;
   padding-left: 20px;
-  width: 260px;
+  min-width: 260px;
   max-width: 260px;
-  height: 125px;
+  min-height: 125px;
 
   font-family: inherit;
   font-size: 18px;
@@ -414,7 +422,7 @@
   }
 
   .form__attraction .form__title {
-    margin-bottom: 40px;
+    margin-bottom: 42px;
   }
 
   .form__attraction p {
@@ -459,7 +467,7 @@
 
     position: absolute;
     top: 30px;
-    left: 385px;
+    left: 383px;
 
     height: 292px;
     width: 1px;
@@ -490,11 +498,11 @@
   }
 
   .form__filters-wrapper p {
-    margin-bottom: 51px;
+    margin-bottom: 53px;
   }
 
   .form__filters-wrapper p:nth-child(2) {
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
 
   .form__wrapper {
@@ -530,9 +538,9 @@
   }
 
   .form__contacts {
-    margin-top: 36px;
+    margin-top: 33px;
     padding: 0;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 
     order: 3;
     border: none;
@@ -545,6 +553,7 @@
 
   .form__contacts p {
     margin-bottom: 25px;
+    margin-top: 23px;
   }
 
   .form__contacts .form__label {
@@ -555,7 +564,7 @@
     display: block;
     margin-left: 5px;
     padding-left: 20px;
-    padding-top: 16px;
+    padding-top: 17px;
     padding-bottom: 16px;
     width: 630px;
   }
@@ -583,8 +592,8 @@
   }
 
   .form__attraction {
-    padding-top: 21px;
-    padding-bottom: 39px;
+    padding-top: 23px;
+    padding-bottom: 32px;
 
     text-align: center;
 
@@ -603,11 +612,12 @@
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    margin-left: 212px;
+    margin-left: 216px;
   }
 
   .form__checkbox input[type="checkbox"] + .form__checkbox-indicator {
-    left: -53px;
+    left: -59px;
+    top: -13px;
   }
 
   .form__wrapper-attraction .checkbox {
@@ -622,12 +632,14 @@
   }
 
   .form__attraction p:nth-child(1) {
-    margin-right: 132px;
+    margin-right: 127px;
 
     order: 1;
   }
 
   .form__attraction p:nth-child(2) {
+    margin-right: 147px;
+
     order: 3;
   }
 
@@ -646,14 +658,15 @@
   }
 
   .form__emotions .form__title {
-    margin-bottom: 56px;
+    margin-bottom: 58px;
   }
 
   .form__textarea {
-    margin-bottom: 56px;
+    margin-bottom: 51px;
     padding-bottom: 0;
-    width: 625px;
-    height: 140px;
+
+    min-width: 625px;
+    min-height: 143px;
     max-width: 625px;
   }
 
@@ -684,8 +697,12 @@
   }
 
   .form__header {
-    margin-bottom: 62px;
+    margin-bottom: 59px;
     padding-top: 57px;
+  }
+
+  .form__main-title {
+    margin-bottom: 30px;
   }
 
   .form__title--line::before {
@@ -739,6 +756,7 @@
 
   .form__login .form__title {
     margin-bottom: 58px;
+    margin-left: -3px;
   }
 
   .form__login .form__field {
@@ -752,6 +770,7 @@
   .form__contacts {
     padding-bottom: 0;
     margin-bottom: 50px;
+    margin-top: 30px;
 
     width: 960px;
 
@@ -810,7 +829,7 @@
     flex-wrap: nowrap;
 
     padding: 0;
-    margin-bottom: 37px;
+    margin-bottom: 28px;
   }
 
   .form__attraction .form__title {
@@ -834,13 +853,13 @@
   }
 
   .form__attraction p:nth-child(1) {
-    margin-right: auto;
+    margin-right: 65px;
 
     order: 1;
   }
 
   .form__attraction p:nth-child(2) {
-    margin-right: 20px;
+    margin-right: 19px;
     padding-left: 30px;
 
     text-align: left;
@@ -849,7 +868,7 @@
   }
 
   .form__attraction p:nth-child(3) {
-    margin-right: auto;
+    margin-right: 68px;
 
     order: 2;
   }
@@ -861,7 +880,7 @@
   }
 
   .form__textarea {
-    width: 940px;
+    min-width: 940px;
     max-width: 940px;
   }
 
