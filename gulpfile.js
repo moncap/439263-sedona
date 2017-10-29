@@ -69,9 +69,9 @@ gulp.task("webp", function () {
 });
 
 
-gulp.task("serve", function() {
+gulp.task("serve", ["style"], function() {
   server.init({
-    server: "build/",
+    server: ".",
     notify: false,
     open: true,
     cors: true,

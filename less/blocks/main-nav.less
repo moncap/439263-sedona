@@ -52,15 +52,19 @@
 }
 
 @media (max-width: @mobile-width-only) {
-  .main-nav--closed {
+  .main-nav__wrapper--closed {
     display: none;
   }
 
-  .main-nav--opened {
+  .main-nav__wrapper--nojs {
     display: block;
   }
 
-  .main-nav--top {
+  .main-nav__wrapper--opened {
+    display: block;
+  }
+
+  .main-nav__toggle--top {
     top: 240px;
   }
 }

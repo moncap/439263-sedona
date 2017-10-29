@@ -47,7 +47,7 @@
 
     <header class="page-header">
       <nav class="main-nav">
-        <div class="main-nav__wrapper main-nav--closed">
+        <div class="main-nav__wrapper main-nav__wrapper--nojs main-nav__wrapper--closed">
           <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -73,7 +73,7 @@
             </li>
           </ul>
         </div>
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle main-nav__toggle--top" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
         </a>
@@ -111,11 +111,11 @@
               <div class="form__contacts-wrapper">
                 <p>
                   <label class="form__label" for="tel"><span class="form__hide">Контактный</span> телефон<sup>*</sup>:</label>
-                  <input class="form__field" id="tel" type="tel" name="tel" placeholder="Введите телефон">
+                  <input class="form__field" id="tel" type="tel" name="tel" placeholder="Введите телефон" required>
                 </p>
                 <p>
                   <label class="form__label" for="email">Электронная почта<sup>*</sup>:</label>
-                  <input class="form__field" id="email" type="email" name="email" placeholder="Введите e-mail">
+                  <input class="form__field" id="email" type="email" name="email" placeholder="Введите e-mail" required>
                 </p>
               </div>
             </div>
@@ -123,57 +123,57 @@
               <h2 class="form__title">Ваше общее впечатление:</h2>
               <div class="form__filters-wrapper">
                 <p>
-                  <label class="radio">
-                      <input class="visually-hidden" type="radio" name="impression" value="positively" checked>
-                      <span class="radio-indicator"></span>
-                      Скорее положительное
+                  <label class="form__radio">
+                    <input class="visually-hidden" type="radio" name="impression" value="positively" checked>
+                    <span class="form__radio-indicator"></span>
+                    Скорее положительное
                   </label>
                 </p>
                 <p>
-                  <label class="radio">
-                      <input class="visually-hidden" type="radio" name="impression" value="negative">
-                      <span class="radio-indicator"></span>
-                      Скорее отрицательное
+                  <label class="form__radio">
+                    <input class="visually-hidden" type="radio" name="impression" value="negative">
+                    <span class="form__radio-indicator"></span>
+                    Скорее отрицательное
                   </label>
                 </p>
                 <p>
-                  <label class="radio">
-                      <input class="visually-hidden" type="radio" name="impression" value="difficult">
-                      <span class="radio-indicator"></span>
-                      Затрудняюсь ответить
+                  <label class="form__radio">
+                    <input class="visually-hidden" type="radio" name="impression" value="difficult">
+                    <span class="form__radio-indicator"></span>
+                    Затрудняюсь ответить
                   </label>
                 </p>
               </div>
             </div>
           </div>
           <div class="form__attraction">
-            <h2 class="form__title form__title--line form__title--line-bottom">посещенные достопримечательности:</h2>
+            <h2 class="form__title form__title--line">посещенные достопримечательности:</h2>
             <div class="form__wrapper-attraction">
               <p>
-                <label class="checkbox">
+                <label class="form__checkbox">
                   <input class="visually-hidden" type="checkbox" name="attraction" value="Devil's Bridge" checked>
-                  <span class="checkbox-indicator"></span>
+                  <span class="form__checkbox-indicator"></span>
                   Мост Дьявола
                 </label>
               </p>
               <p>
-                <label class="checkbox">
+                <label class="form__checkbox">
                   <input class="visually-hidden" type="checkbox" name="attraction" value="Slide-park" checked>
-                  <span class="checkbox-indicator"></span>
+                  <span class="form__checkbox-indicator"></span>
                   Слайд-парк
                 </label>
               </p>
               <p>
-                <label class="checkbox">
+                <label class="form__checkbox">
                   <input class="visually-hidden" type="checkbox" name="attraction" value="Mountain-Bell">
-                  <span class="checkbox-indicator"></span>
+                  <span class="form__checkbox-indicator"></span>
                   Гора-Колокол
                 </label>
               </p>
               <p>
-                <label class="checkbox">
+                <label class="form__checkbox">
                   <input class="visually-hidden" type="checkbox" name="attraction" value="Red rocks" checked>
-                  <span class="checkbox-indicator"></span>
+                  <span class="form__checkbox-indicator"></span>
                   Красные скалы
                 </label>
               </p>
