@@ -143,6 +143,11 @@
   border-bottom: 1px solid #e5e5e5;
 }
 
+.form__radio,
+.form__checbox {
+  display: block;
+}
+
 .form__radio input[type="radio"] + .form__radio-indicator {
   position: absolute;
   top: -13px;
@@ -431,11 +436,6 @@
     margin-bottom: 42px;
   }
 
-  .form__attraction p {
-    margin-bottom: 47px;
-    margin-right: 151px;
-  }
-
   .form__title--line {
     display: block;
     margin: 0 auto;
@@ -612,17 +612,34 @@
     width: 300px;
   }
 
+  .form__wrapper-attraction label {
+    display: block;
+
+    margin-left: 70px;
+
+    text-align: left;
+  }
+
   .form__wrapper-attraction {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+
     padding: 0;
-    margin: 0;
-    margin-left: 216px;
+    margin: 0 auto;
+
+    width: 648px;
   }
 
   .form__checkbox input[type="checkbox"] + .form__checkbox-indicator {
-    left: -59px;
+    left:-10px;
     top: -13px;
+  }
+
+  .form__attraction p {
+    margin-bottom: 47px;
+
+    width: 35%;
   }
 
   .form__wrapper-attraction .checkbox {
@@ -636,23 +653,27 @@
     text-align: left;
   }
 
-  .form__attraction p:nth-child(1) {
-    margin-right: 127px;
+  .form__attraction p:nth-child(-n+2) {
+    margin-left: 88px;
+  }
 
+  .form__attraction p:nth-child(1) {
     order: 1;
   }
 
   .form__attraction p:nth-child(2) {
-    margin-right: 147px;
-
     order: 3;
   }
 
   .form__attraction p:nth-child(3) {
+    margin-right: 41px;
+
     order: 2;
   }
 
   .form__attraction p:nth-child(4) {
+    margin-right: 41px;
+
     order: 4;
   }
 
@@ -821,7 +842,7 @@
   }
 
   .form__wrapper-attraction label {
-    margin-left: 15px;
+    margin-left: 45px;
   }
 
   .form__filters {
@@ -842,7 +863,7 @@
   .form__attraction p {
     margin-right: 71px;
 
-    width: 189px;
+    width: 205px;
   }
 
   .form__checkbox input[type="checkbox"] + .form__checkbox-indicator {
@@ -856,14 +877,15 @@
   }
 
   .form__attraction p:nth-child(1) {
-    margin-right: 49px;
+    margin-left: 0;
+    margin-right: 23px;
 
     order: 1;
   }
 
   .form__attraction p:nth-child(2) {
     margin-right: 0;
-    padding-left: 30px;
+    margin-left: 0;
 
     text-align: left;
 
@@ -871,13 +893,13 @@
   }
 
   .form__attraction p:nth-child(3) {
-    margin-right: 53px;
+    margin-right: 21px;
 
     order: 2;
   }
 
   .form__attraction p:nth-child(4) {
-    margin-right: 13px;
+    margin-right: 0;
 
     order: 4;
   }
