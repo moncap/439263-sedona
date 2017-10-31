@@ -264,17 +264,17 @@
   padding-left: 79px;
 }
 
-.form__wrapper-attraction p {
+.form__checkbox-wrapper {
   position: relative;
   margin-bottom: 55px;
   cursor: pointer;
 }
 
-.form__wrapper-attraction p:nth-child(2) {
+.form__checkbox-wrapper:nth-child(2) {
   margin-bottom: 53px;
 }
 
-.form__wrapper-attraction p:nth-child(4) {
+.form__checkbox-wrapper:nth-child(4) {
   margin-bottom: 0;
 }
 
@@ -623,10 +623,12 @@
   .form__wrapper-attraction {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
+    align-items: flex-start;
 
     padding: 0;
     margin: 0 auto;
+    margin-left: 165px;
 
     width: 648px;
   }
@@ -636,10 +638,12 @@
     top: -13px;
   }
 
-  .form__attraction p {
+  .form__checkbox-wrapper {
     margin-bottom: 47px;
 
-    width: 35%;
+    width: 40%;
+
+    box-sizing: border-box;
   }
 
   .form__wrapper-attraction .checkbox {
@@ -653,34 +657,20 @@
     text-align: left;
   }
 
-  .form__attraction p:nth-child(-n+2) {
-    margin-left: 88px;
-  }
-
-  .form__attraction p:nth-child(2n+5) {
-    margin-left: 88px;
-  }
-
-  .form__attraction p:nth-child(2n+6) {
-    margin-right: 41px;
-  }
-
-  .form__attraction p:nth-child(1) {
+  .form__checkbox-wrapper:nth-child(1) {
     order: 1;
   }
 
-  .form__attraction p:nth-child(2) {
+  .form__checkbox-wrapper:nth-child(2) {
     order: 3;
   }
 
-  .form__attraction p:nth-child(3) {
-    margin-right: 41px;
-
+  .form__checkbox-wrapper:nth-child(3) {
     order: 2;
   }
 
-  .form__attraction p:nth-child(4) {
-    margin-right: 41px;
+  .form__checkbox-wrapper:nth-child(4) {
+    margin-bottom: 47px;
 
     order: 4;
   }
@@ -868,7 +858,7 @@
     margin-bottom: 43px;
   }
 
-  .form__attraction p {
+  .form__checkbox-wrapper {
     width: 205px;
   }
 
@@ -882,38 +872,38 @@
     width: 200px;
   }
 
-  .form__attraction p:nth-child(2n+5) {
+  .form__checkbox-wrapper:nth-child(2n+5) {
     margin-left: 0;
   }
 
-  .form__attraction p:nth-child(2n+6) {
+  .form__checkbox-wrapper:nth-child(2n+6) {
     margin-right: 0;
   }
 
-  .form__attraction p:nth-child(4n+5) {
+  .form__checkbox-wrapper:nth-child(4n+5) {
     margin-right: 55px;
   }
 
-  .form__attraction p:nth-child(4n+6) {
+  .form__checkbox-wrapper:nth-child(4n+6) {
     margin-right: 53px;
   }
 
-  .form__attraction p:nth-child(4n+7) {
+  .form__checkbox-wrapper:nth-child(4n+7) {
     margin-right: 31px;
   }
 
-  .form__attraction p:nth-child(4n+8) {
+  .form__checkbox-wrapper:nth-child(4n+8) {
     margin-right: 0;
   }
 
-  .form__attraction p:nth-child(1) {
+  .form__checkbox-wrapper:nth-child(1) {
     margin-left: 0;
     margin-right: 55px;
 
     order: 1;
   }
 
-  .form__attraction p:nth-child(2) {
+  .form__checkbox-wrapper:nth-child(2) {
     margin-right: 31px;
     margin-left: 0;
 
@@ -922,13 +912,13 @@
     order: 3;
   }
 
-  .form__attraction p:nth-child(3) {
+  .form__checkbox-wrapper:nth-child(3) {
     margin-right: 53px;
 
     order: 2;
   }
 
-  .form__attraction p:nth-child(4) {
+  .form__checkbox-wrapper:nth-child(4) {
     margin-right: 0;
 
     order: 4;
