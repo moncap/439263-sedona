@@ -653,8 +653,6 @@
     margin-left: 23px;
 
     width: 125px;
-
-    text-align: left;
   }
 
   .form__checkbox-wrapper:nth-child(1) {
@@ -859,7 +857,7 @@
   }
 
   .form__checkbox-wrapper {
-    width: 205px;
+    width: 25%;
   }
 
   .form__checkbox input[type="checkbox"] + .form__checkbox-indicator {
@@ -872,54 +870,28 @@
     width: 200px;
   }
 
-  .form__checkbox-wrapper:nth-child(2n+5) {
-    margin-left: 0;
-  }
-
-  .form__checkbox-wrapper:nth-child(2n+6) {
-    margin-right: 0;
-  }
-
-  .form__checkbox-wrapper:nth-child(4n+5) {
-    margin-right: 55px;
-  }
-
-  .form__checkbox-wrapper:nth-child(4n+6) {
-    margin-right: 53px;
-  }
-
-  .form__checkbox-wrapper:nth-child(4n+7) {
-    margin-right: 31px;
-  }
-
-  .form__checkbox-wrapper:nth-child(4n+8) {
-    margin-right: 0;
-  }
-
   .form__checkbox-wrapper:nth-child(1) {
-    margin-left: 0;
-    margin-right: 55px;
-
     order: 1;
   }
 
   .form__checkbox-wrapper:nth-child(2) {
-    margin-right: 31px;
-    margin-left: 0;
-
-    text-align: left;
+    padding-left: 39px;
 
     order: 3;
   }
 
   .form__checkbox-wrapper:nth-child(3) {
-    margin-right: 53px;
+    padding-left: 20px;
 
     order: 2;
+
+    .form__checkbox-indicator {
+      left: 50px;
+    }
   }
 
   .form__checkbox-wrapper:nth-child(4) {
-    margin-right: 0;
+    padding-left: 35px;
 
     order: 4;
   }
